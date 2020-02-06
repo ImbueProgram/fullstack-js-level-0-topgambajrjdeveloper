@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <style>
+        *{
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+        p {
+            font-size: 15px;
+        }
+
+        .padre {
+            display: flex;
+            flex-flow: column nowrap;
+
+        }
+
+
+        .elemento-flex {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: row;
+        }
+
+        .row-reverse {
+            display: flex;
+            flex: 2 4 auto;
+            flex-direction: row-reverse;
+        }
+
+        .space-between {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .flex-grow {
+            display: flex;
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+        <p>Display flex</p>
+        <div class="elemento-flex">
+            <div style="background-color: red;">1</div>
+            <div style="background-color: yellow;">2</div>
+            <div style="background-color: orange;">3</div>
+            <div style="background-color: wheat;">4</div>
+        </div>
+
+        <p>Row reverse</p>
+        <div class="row-reverse">
+            <div style="background-color: red;">1</div>
+            <div style="background-color: yellow;">2</div>
+            <div style="background-color: orange;">3</div>
+            <div style="background-color: wheat;">4</div>
+        </div>
+
+        <p>Space between</p>
+        <div class="space-between">
+            <div style="background-color: red;">1</div>
+            <div style="background-color: yellow;">2</div>
+            <div style="background-color: orange;">3</div>
+        </div>
+
+        <p>flex-grow</p>
+        <div class="flex-grow">
+            <div style="background-color: red;">1</div>
+            <div style="background-color: yellow;">2</div>
+            <div style="background-color: orange;">3</div>
+            <div style="background-color: orange;">3</div>
+            <div style="background-color: blueviolet;">4</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
